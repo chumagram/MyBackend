@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <span id="lista"></span> <!-- para inyectar el resultado -->
+
+    <!-- incluir handlebars desde el CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"></script>
+
+    <script>
+        let templateNotRender = '<h1>Datos personales</h1><ul>';
+        templateNotRender += '<li>{{nombre}}</li>';
+        templateNotRender += '<li>{{apellido}}</li>';
+        templateNotRender += '<li>{{edad}}</li>';
+        templateNotRender += '<li>{{email}}</li>';
+        templateNotRender += '<li>{{telefono}}</li>';
+        templateNotRender += '</ul>';
+        const template = Handlebars.compile(templateNotRender);
+        const html = template({
+            nombre:'Gonzalo',
+            apellido:'Gramajo',
+            edad: 24,
+            email: 'gramajogonzalo@gmail.com',
+            telefono: 3886851166
+        }); // genera el html
+
+        document.getElementById('lista').innerHTML = html;
+        //document.getElementById('apellido').innerHTML = html.apellido;
+        //document.querySelector('span').innerHTML = html; // inyecta el resultado en la vista
+    </script>
+
+</body>
+</html>
