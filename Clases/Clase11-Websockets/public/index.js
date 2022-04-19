@@ -1,7 +1,7 @@
 const socket = io();
 
 let button = document.getElementById('btn-enviar');
-let inputmensaje = document.getElementById('mensaje');
+let inputMensaje = document.getElementById('mensaje');
 let parrado = document.getElementById('parrafo')
 
 button.addEventListener('click', function(params){
