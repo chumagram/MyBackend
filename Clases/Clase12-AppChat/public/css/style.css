@@ -1,0 +1,10 @@
+body{
+    background-color: rgb(43, 43, 43);
+    color: white;
+    text-align: center;
+    font-family: verdana;
+}
+
+form{
+    margin-bottom: 20px;
+}

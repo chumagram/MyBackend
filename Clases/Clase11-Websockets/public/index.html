@@ -1,17 +1,20 @@
 <!DOCTYPE html>
-<html lang="e">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sockets</title>
     <link rel="stylesheet" href="/css/style.css">
+    <!-- La siguiente linea llama a un modulo que esta en la libreria de socket.io -->
 </head>
 <body>
     <h1>TUTORIAL DE SOCKETS.IO</h1>
+    <!-- no es necesario el post -->
     <input type="text" name="mensaje" id="mensaje">
-    <input type="button" value="Enviar" id="btm-enviar">
+    <input type="button" value="Enviar" id="btn-enviar">
+    <!-- Parrafo para mostrar lo que nos mandan vía "mi mensaje" -->
     <p id="parrafo"></p>
-    
+    <!-- Se pone los sripts al final del codigo porque sino se ejecutan, me va apedir el botton pero todavia no esta construido... -->
     <script src="/socket.io/socket.io.js"></script>
     <script src="index.js"></script>
 </body>
