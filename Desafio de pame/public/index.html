@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Aplicación con Sockets</title>
+    <script src="/socket.io/socket.io.js"></script>
+    <!-- agregamos defer, para que se ejecute luego de cargar la paigna/dom -->
+    <script defer src="js/main.js"></script>
+</head>
+
+<body>
+    <h1>Mi App Chat</h1>
+    <div id="messages"></div>
+
+    <form id="form">
+        <input type="text" id="username" placeholder="Tu Nombre" >
+        <input type="text" id="texto" placeholder="Cuéntanos algo...">
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
